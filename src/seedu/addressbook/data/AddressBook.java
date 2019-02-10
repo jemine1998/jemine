@@ -45,6 +45,15 @@ public class AddressBook {
         return allPersons.contains(key);
     }
 
+    /*prints out name if duplicate is found*/
+
+    public void nameOfDuplicate  (ReadOnlyPerson key) {
+        if (containsPerson(key)==true){
+            String duplicate = "This user is already in the system";
+            System.out.println(duplicate);
+        }
+    }
+
     /**
      * Removes the equivalent person from the address book.
      *
